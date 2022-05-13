@@ -1,13 +1,11 @@
 import { Navbar } from 'react-bootstrap';
 import './App.css';
-import Contacts from './components/Contacts';
-import NavbarCom from './components/NavBar.js/NavbarCom';
+import Home from './Components/Home';
 
 function App() {
   return (
     <div className="App">
-      <NavbarCom />
-      <Contacts />
+      <Home />
     </div>
   );
 }

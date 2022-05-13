@@ -1,17 +1,21 @@
 import Axios from 'axios'
-import React from 'react'
+import React, { useState } from 'react'
 
 
 function Home() {
 
+    //const [affirmation, setJoke] = useState("")
+
     const getJoke = () => {
-        Axios.get("https://api.chucknorris.io/jokes/random").then((response) => {
-            console.log(response)
-        })
+        Axios.get("https://www.affirmations.dev/").then((response) => {
+            console.log(response);
+            //setJoke(response.data.affirmation)
+        });
     }
   return (
-    <div>Wassup
-        <button onClick={getJoke}>Click For the Joke</button>
+    <div>
+        <button onClick={getJoke}>Click For the Affirmation</button>
+
     </div>
   )
 }
